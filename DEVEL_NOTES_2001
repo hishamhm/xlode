@@ -1,0 +1,9 @@
+
+* Use only uncompressed TGA files, with RGB (true color) images.
+  Compressed images will display corrupted; indexed images
+  will crash the game.
+* I had to solve a naming conflict between Allegro and MikMod
+  (the SAMPLE struct). It would be easier to copy mikmod.h
+  and rename it struct, but since that was the one I would
+  be using, I thought it made more sense to disable Allegro's
+  sound system.
